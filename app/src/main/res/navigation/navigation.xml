@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/navigation"
+            app:startDestination="@id/homeFragment">
+
+    <fragment android:id="@+id/homeFragment"
+              android:name="com.lapurema.manhhoan.project1.HomeFragment"
+              android:label="HomeFragment"/>
+
+    <fragment android:id="@+id/searchFragment"
+              android:name="com.lapurema.manhhoan.project1.SearchFragment"
+              android:label="SearchFragment">
+        <action
+                android:id="@+id/action_searchFragment_to_detailFragment"
+                app:destination="@id/detailFragment"/>
+    </fragment>
+
+    <fragment android:id="@+id/saleFragment"
+              android:name="com.lapurema.manhhoan.project1.SaleFragment"
+              android:label="SaleFragment"/>
+
+    <fragment android:id="@+id/notificationFragment"
+              android:name="com.lapurema.manhhoan.project1.NotificationFragment"
+              android:label="NotificationFragment"/>
+
+    <fragment android:id="@+id/detailFragment"
+              android:name="com.lapurema.manhhoan.project1.DetailFragment"
+              android:label="DetailFragment"/>
+
+</navigation>
